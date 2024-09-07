@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<h1>Conditional Statments</h1>
+<h2>This is my project</h2>
+    </head>
+    <body>
+      <button onclick="f()">click on this</button>  
+      <p id="hour"></p>
+    <p id="message"></p>
+        <script>
+        function f(){
+            var message
+            var time=new Date().getHours()
+            if (time<10){
+                message="Good Morning"
+            }
+            else if (time<20){
+                message="Good Evening"
+            }
+           else{
+            message="Good Night"
+           }
+           document.getElementById("hour").innerHTML ="The current Hour is="+time
+           document.getElementById("message").innerHTML =message
+        }
+        </script>
+    
+    </body>
+       
+</html>
